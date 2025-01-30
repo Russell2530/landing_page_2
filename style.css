@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+/* Navbar CSS */
+body {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: white;
+    padding: 2vw 3vw;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+nav {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 80px;
+    flex-direction: row;
+    align-items: center;
+}
+
+#menu-btn{
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+nav img{
+    width: 150px;
+    cursor: pointer;
+}
+#menu-close{
+  display: none;
+}
+
+nav .logo h1 {
+    color: rgb(255, 169, 40);
+}
+
+nav .nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+}
+nav .nav-links a:hover {
+    color: #1a217f;
+    text-decoration: none;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Section CSS */
+.hero {
+    background: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(FolderFoto/photo-1530789253388-582c481c54b0.avif) no-repeat center center/cover;
+    height: 910px;
+    display: flex;
+    align-items: center;
+    color: white;
+    
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+    margin-left: 320px;
+    text-align: center;
+  }
+.cta-buttons .btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 650px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color:  rgb(255, 169, 40);;
+    color: black;
+}
+.cta-buttons a:hover{
+    background-color:#002e5e;
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* About CSS */
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    padding: 100px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+  }
+  
+  /* Teks Kiri */
+  .text-content {
+    flex: 1;
+    padding-right: 20px;
+    margin-top: -50px;
+    z-index: 1;
+  }
+  
+  .text-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .underline {
+    width: 50px;
+    height: 4px;
+    background-color:  rgb(255, 169, 40);;
+    margin: 10px 0 20px 0;
+  }
+  
+  .text-content p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 30px;
+    padding-right: 20px;
+  }
+  
+  /* Foto Kanan */
+  .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+/* List CSS */
+.features {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: left;
+    z-index: 1;
+}
+
+.features h2 {
+    margin-bottom: -10px;
+    font-size: 28px;
+    text-align: center;
+    color: #010101;
+    margin-top: 3rem;
+}
+.features h5 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.feature-list {
+    display: flex;
+    /* margin-left: 220px; */
+    justify-content: space-evenly;
+    /* gap: 50px; */
+}
+.feature-item img{
+    display: flex;
+    align-items: left;
+    width: 70px;
+}
+
+.feature-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.feature-item p {
+    text-align: center;
+}
+.features .feature-item i{
+    font-size: 2.3rem;
+    color: rgb(255, 169, 40);
+    margin-bottom: 20px;
+}
+.feature-item{
+    width: 20vw;
+    text-align: center;
+}
+/* Foto */
+swiper-container{
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    gap: 20px;
+}
+
+.cardcontainer{
+    padding: 15px;
+    text-align: start;
+    border-radius: 5px;
+    background-color: rgb(255, 251, 251);
+    box-shadow: rgba(0, 0, 0, 0.231) 0px 1px 0px, rgba(17, 17, 26, 0.495) 0px 0px 4px;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.cardfoto img{
+    border-radius: 5px;
+    width: 350px;
+    height: 200px;
+}
+
+.cardcontainer{
+    transition: transform 0.3s ease;
+}
+
+.cardcontainer:hover{
+    transform: translateY(-10px);
+}
+.card-content {
+    padding: 15px;
+    text-align: center;
+  }
+  .tour-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .tour-location {
+    color: black;
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: start;
+  }
+  
+  .tour-price {
+    font-size: 18px;
+    font-weight: bold;
+    color:  #002e5e;
+    margin: 5px 0;
+    text-align: start;
+  }
+.card-content .bintang{
+    margin-top: -10px;
+    color: orange;
+    font-size: 30px;
+    text-align: start;
+}
+.cardcontainer h3{
+    text-align: start;
+    color: black;
+}
+.judul{
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 15px;
+}
+
+/* Testimoni CSS */
+.judulnya{
+  text-align: center;
+  margin-top: 75px;
+}
+
+.glider-slide {
+  background-color: #eeeeee;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.glider-img img{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  border: 2px solid #ddd;
+
+}
+
+.testimonial-content {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-left: 90px;
+  margin-top: -70px;
+}
+
+.testimonial-location {
+  color: #777;
+  margin-left: 90px;
+}
+.bintang2{
+  color: orange;
+  font-size: 30px;
+  margin-left: 90px;
+}
+
+/* Package */
+.packages {
+  text-align: center;
+  padding: 20px;
+}
+
+.packages h1 {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-top: 30px;
+}
+
+.packages p {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+.package-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.package {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  text-align: left;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.package img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #333;
+}
+
+.package h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: rgb(255, 169, 40);
+}
+
+.package .price {
+  font-size: 1.2rem;
+  color: rgb(255, 169, 40);
+  margin: 10px 0;
+}
+
+.package ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.package ul li {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #000000;
+
+}
+
+.package ul li i{
+ margin-right: 10px;
+}
+
+.package button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #002e5e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.package button:hover {
+  background-color: rgb(255, 169, 40);
+  color: rgb(0, 0, 0);
+  transition: 0.3s ease;
+}
+
+/* Contact CSS */
+.contact-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.info-container {
+  display: flex;
+  /* justify-content: center; */
+  gap: 150px;
+  margin: 20px 210px;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.info-item i {
+  font-size: 24px;
+  color: #ffa500;
+  margin-bottom: 10px;
+}
+
+.container5{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-left: 220px;
+  margin-top: 20px;
+  flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 400px;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 15px 30px;
+  border: none;
+  background-color: #ffa500;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #ff8800;
+}
+
+.map-container {
+  margin-top: 20px;
+  margin-right: 130px;
+  flex: 1;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #002e5e;
+  color: rgb(255, 169, 40);
+  padding: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 70px;
+
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h2 {
+  font-size: 15px;
+  /* font-weight: bold; */
+  color: rgb(255, 169, 40);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-left: 3px solid rgb(255, 169, 40);
+  padding-left: 10px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.footer-section ul li {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+  /* margin-top: -26px; */
+}
+
+.footer-section ul li a {
+  color: rgb(255, 169, 40);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  color: white;
+}
+
+.footer-section i{
+  margin-left: 10px;
+}
+
+.footer-section ul p{
+  margin-top: -26px;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+.footer-copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: rgb(255, 169, 40);
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.social-links i{
+  margin-right: 300px;
+}
+
+.social-links ul p{
+  font-size: 14px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.footer-section .social-links p:hover{
+  color: white;
+}
+
+.social-links li {
+  /* display: inline-block; */
+  margin-right: 10px;
+  margin-top: -27px;
+}
+
+.social-links li:hover{
+  color: white;
+}
+
+.newsletter-container {
+  text-align: center;
+  /* background-color: #444; */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: -10px;
+}
+
+.newsletter-container h2 {
+  font-size: 15px;
+  /* font-weight: bold; */
+  color: rgb(255, 169, 40);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-left: 3px solid rgb(255, 169, 40);
+  padding-left: 10px;
+  display: inline-block;
+  margin-right: 145px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 10px;
+  font-size: 13px;
+  background-color: rgb(255, 169, 40);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: rgb(208, 125, 0);
+}
+
+.hubungi-kami button{
+  padding: 10px;
+  font-size: 13px;
+  background-color: rgb(255, 169, 40);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  /* margin-right: 100px; */
+  margin-left: -120px;
+}
+
+.hubungi-kami button:hover{
+  background-color: rgb(208, 125, 0);
+}
+
+.hubungi-kami i{
+  margin-right: 130px;
+}
+
+
+
+@media (max-width: 800px){
+  nav img{
+    width: 130px;
+}
+  #menu-btn{
+    display: initial;
+}
+
+#menu-close{
+    display: initial;
+    font-size: 1.6rem;
+    color: white;
+    padding: 30px 0 20px 20px;
+}
+
+nav .nav-links{
+    position: absolute;
+    top: 0;
+    right: -220px; 
+    width: 220px;
+    background: rgba(17, 20, 104, 0.45);
+    height: 100vh;
+    backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    transition: 0.3s ease;
+}
+nav .nav-links .active{
+  right: 0;
+
+}
+
+nav .nav-links li{
+  padding: 20px 0 20px 40px;
+  margin-left: 0;
+}
+
+nav .nav-links li a{
+  color: white;
+}
+
+}
